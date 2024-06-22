@@ -42,3 +42,4 @@ section 软件
 ## DEV timeline
 ### 240622
 - 立项。创建githubrepo。
+- 完成ZVS电路仿真设计
