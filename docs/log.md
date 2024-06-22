@@ -19,8 +19,26 @@
         C2-->D6[姿态调整装置]
         C2-->D7[供弹装置等]
 ```
+```mermaid
+gantt
+dateFormat MM-DD
+axisFormat %m/%d
+title 开发时间轴
+section 禁赛
+实践 :  crit,xx1, 07-04, 1w
+section 电路硬件
+升压电路设计 :hw11, 06-23, 2d
+升压电路打板:hw12, after hw11, 5d
+升压电路调试:hw13, after hw12 hw11 , 2d
+驱动电路设计 :hw21, after hw11, 2d
+驱动电路打板: hw22, after hw21, 5d
+section 软件
+```
 ## 前期准备
 ### 软件下载
 - 电路仿真软件 `MULTISIM14` https://cloud.tsinghua.edu.cn/d/d82f36fe9607472283ef/
 - PCB设计软件 `Altisim` https://www.altium.com/ 注册账号并申请教育版
 - `AutoCAD` https://www.autodesk.com.hk/products/autocad 注册账号并申请教育版
+## DEV timeline
+### 240622
+- 立项。创建githubrepo。
