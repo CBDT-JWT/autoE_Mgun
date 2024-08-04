@@ -15,15 +15,24 @@
 
 #include<Arduino.h>
 #include<Servo.h>
+Servo waist_servo, tilt_servo;
 void setup() {
-  
-  pinMode(LED_BUILTIN, OUTPUT);  // Initialize the LED_BUILTIN pin as an output
+  waist_servo.attach(D1);
+  tilt_servo.attach(D2);
+  //Serial.begin(9600);
 }
 
 // the loop function runs over and over again forever
 void loop() {
-  digitalWrite(LED_BUILTIN, LOW);  
-  delay(1000);                      
-  digitalWrite(LED_BUILTIN, HIGH); 
-  delay(2000);                      
+    tilt_servo.write(140);
+    delay(1000);
+    tilt_servo.write(100);
+    delay(1000);
+    //waist_servo.writeMicroseconds(1000);
+    //delay(1000);
+    waist_servo.write(0);
+    delay(500);
+    waist_servo.write(180);
+    delay(500);
+    waist_servo.write(90);
 }
