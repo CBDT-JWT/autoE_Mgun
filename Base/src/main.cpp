@@ -14,25 +14,35 @@
 **********************************************************************************/
 
 #include<Arduino.h>
-#include<Servo.h>
-Servo waist_servo, tilt_servo;
+
+#include"baseservos.cpp"
+
+#define MODE_IDLE 0
+#define MODE_AIM_PERSON 1
+#define MODE_AIM_TARGET 2
+#define MODE_MPU 3
+#define MODE_DEBUG 4
+typedef int mode_t;
+
+mode_t mode = MODE_IDLE;
+BaseServos base(D1,D2);
 void setup() {
-  waist_servo.attach(D1);
-  tilt_servo.attach(D2);
-  //Serial.begin(9600);
+  
+  Serial.begin(9600);
 }
 
 // the loop function runs over and over again forever
 void loop() {
-    tilt_servo.write(140);
-    delay(1000);
-    tilt_servo.write(100);
-    delay(1000);
-    //waist_servo.writeMicroseconds(1000);
-    //delay(1000);
-    waist_servo.write(0);
-    delay(500);
-    waist_servo.write(180);
-    delay(500);
-    waist_servo.write(90);
+    switch(mode){
+        case MODE_IDLE:
+            break;
+        case MODE_AIM_PERSON:
+            break;
+        case MODE_AIM_TARGET:
+            break;
+        case MODE_MPU:
+            break;
+        case MODE_DEBUG:
+            break;
+    }
 }

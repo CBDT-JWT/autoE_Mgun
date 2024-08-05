@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}项目背景}{1}{section.1}%
+\contentsline {section}{\numberline {2}项目简介}{1}{section.2}%
+\contentsline {section}{\numberline {3}项目架构与目前进度}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}目前进度}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}电路结构设计}{2}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}机械结构设计}{2}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}后续开发计划}{2}{subsection.3.4}%
+\contentsline {section}{\numberline {A}演示视频}{2}{appendix.A}%
+\contentsline {section}{\numberline {B}参考文献}{5}{appendix.B}%
