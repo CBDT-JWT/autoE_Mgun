@@ -4,6 +4,6 @@
 \contentsline {subsection}{\numberline {3.1}目前进度}{2}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}电路结构设计}{2}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}机械结构设计}{2}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}后续开发计划}{2}{subsection.3.4}%
-\contentsline {section}{\numberline {A}演示视频}{2}{appendix.A}%
-\contentsline {section}{\numberline {B}参考文献}{5}{appendix.B}%
+\contentsline {subsection}{\numberline {3.4}后续开发计划}{4}{subsection.3.4}%
+\contentsline {section}{\numberline {A}演示视频}{4}{appendix.A}%
+\contentsline {section}{\numberline {B}参考文献}{4}{appendix.B}%

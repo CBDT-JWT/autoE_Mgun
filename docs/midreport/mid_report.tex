@@ -4,7 +4,7 @@
 \ctikzset{american,european resistors}
 \ctikzset{tripoles/mos style/arrows}
 \ctikzset{tripoles/pmos style/nocircle}
-\title{《电子系统综合设计与制作》中期报告\\——\textit{基于}\texttt{ESP8266}\textit{的智能磁阻式电磁炮台}}
+\title{《电子系统综合设计与制作》中期报告\\——\textit{智能磁阻式电磁炮台}}
 \author{江玮陶\quad 2023010631\\张光宇\quad 2023010629\\陈冠嘉\quad 2023010503}
 \begin{document}
 \maketitle
@@ -15,27 +15,23 @@
 电磁炮从原理上分为线圈炮和轨道炮，前者又可以按照磁力的来源分为磁阻炮和感应炮两种。磁阻炮的加速原理类似级联的电磁铁，通过精巧的控制各级线圈的通电时机达到“接力”加速弹丸的目的，由于其结构简单、可拓展性强且不依赖急剧变化的电流，本项目采取多级磁阻作为炮体部分。
 
 \section{项目简介}
-本项目名称为\textit{基于}\texttt{ESP8266}\textit{的智能磁阻式电磁炮台}。本项目预期达到如下功能：
+本项目名称为\textit{智能磁阻式电磁炮台}。本项目预期达到如下功能：
 \begin{itemize}
     \item 基本功能：实现基于时序控制的多级磁阻式电磁炮，包括高压充电功能，各级线圈的开关控制功能，自动供弹功能。
-    \item 附加功能：实现基于\texttt{S20F}舵机云台和\texttt{ESP8266}的发射控制功能，包括发射角度的控制、自动充电功能等。
+    \item 附加功能：实现基于\texttt{S20F}舵机云台和\texttt{MEGA2560}的发射控制功能，包括发射角度的控制、自动充电功能等。
     \item 扩展功能：实现基于\texttt{K210}视觉模块的目标识别功能，包括目标识别、自动瞄准、自动射击等。
     \item 扩展功能：实现基于\texttt{ESP32-CAM}和\texttt{MPU6050}的手持遥控功能，结合特征识别技术，实现“指哪打哪”的效果。
 \end{itemize}
 \section{项目架构与目前进度}
 \subsection{目前进度}
-本项目大致的系统架构与目前进度如图\ref{prog}所示
+本项目大致的系统架构如图\ref{prog}所示
 \begin{figure}
 \centering
-\begin{minipage}[b]{0.45\linewidth}
+\begin{minipage}[b]{0.85\linewidth}
     \centering
     \includegraphics[width=\linewidth]{imgs/systemStructure.png}
 \end{minipage}
-\begin{minipage}[b]{0.45\linewidth}
-    \centering
-    \includegraphics[width=\linewidth]{imgs/progress.png}
-\end{minipage}
-\caption{项目架构与目前进度}
+\caption{系统架构图}
 \label{prog}
 \end{figure}
 \subsection{电路结构设计}
@@ -154,7 +150,15 @@
 \end{figure}
 \appendix
 \section{演示视频}
-点击\href{https://cloud.tsinghua.edu.cn/f/abc058fe22bd465c998f/}{视频下载链接}可以查看我们的演示视频。
+点击\href{https://cloud.tsinghua.edu.cn/f/abc058fe22bd465c998f/}{视频下载链接}可以查看我们的演示视频。截至报告提交，已经实现的效果图如图\ref{demo}所示。
+\begin{figure}
+    \centering
+    \begin{minipage}[b]{0.85\linewidth}
+        \includegraphics[width=\linewidth]{imgs/demo.png}
+    \end{minipage}
+    \caption{效果图}
+    \label{demo}
+\end{figure}
 \section{参考文献}
 \begin{enumerate}
     \item 李小鹏，徐征，李立毅：《电磁线圈发射原理》，北京：兵器工业出版社，2019.
