@@ -11,18 +11,29 @@
 
 #include <Arduino.h>
 #include <Servo.h>
+#include <SPI.h>
+#include <RF24.h>
+#include <nRF24L01.h>
 
 #define IDLE_MODE 0
 #define RC_MODE 1
+#define DEBUG_MODE -1
 #define K210 Serial1
-
+bool with_K210 = false;
 #define HUMAN_SENSOR_PIN 4
 #define LASER_PIN 22
+#define CHARGE_ENA_PIN 28
+#define CHARGE_VOLTAGE_PIN A0
 
+const int STAGE_CTRL_PINS[]={33,34,35,36,37,38};
+const int INIT_PIN = 32;
 const float aim_point_relative_x=0.5;
 const float aim_point_relative_y=0.5;
 
 Servo waist_servo, tilt_servo;
+
+RF24 radio(7,8);
+const byte address[6] = "00001";
 
 //servo.write(servo.read()+ Kp * err + Ki * int + Kd * diff);
 /*PID const configurations*/
@@ -84,11 +95,27 @@ void aim_target_1_itr(int target_x, int target_y, int canvas_width, int canvas_h
 
 
 
+int stage_delay_us_arr [] = {1000,10000,10000,10000,10000,10000};//delay after stage
+long int stage_hold_us_arr [] = {1000000,100000,100000,100000,100000,100000}; //hold time
 
-// BaseServos base_servos(2, 3);
+void fire(){
+  digitalWrite(CHARGE_ENA_PIN,LOW);
+  
+  for(int i=0;i<6;i++){
+    if(stage_hold_us_arr[i]==0)continue;
+    Serial.println(i);
+    digitalWrite(STAGE_CTRL_PINS[i], HIGH);
+    delayMicroseconds(stage_hold_us_arr[i]);
+    digitalWrite(STAGE_CTRL_PINS[i], LOW);
+    delayMicroseconds(stage_delay_us_arr[i]);
+  }
+}
+
+
+
 int get_mode()
 {
-  return IDLE_MODE; // todo: implement this function
+  return DEBUG_MODE; // todo: implement this function
 }
 
 int read_human_sensor()
@@ -113,8 +140,14 @@ void setup()
   // put your setup code here, to run once:
 
   Serial.begin(9600);
-  K210.begin(9600);
-
+  Serial.println("Hello,world!");
+  delay(1000);
+  if(with_K210)K210.begin(9600);
+  // if(radio.begin())Serial.println("radio begin success");
+  // else Serial.println("radio begin failed");
+  // radio.openReadingPipe(0, address);
+  // radio.setPALevel(RF24_PA_MIN);
+  // radio.startListening();
   waist_servo.attach(2);
   tilt_servo.attach(3);
 
@@ -123,27 +156,64 @@ void setup()
   delay(1000);
   pinMode(LASER_PIN, OUTPUT);
   pinMode(HUMAN_SENSOR_PIN, INPUT);
+  pinMode(CHARGE_ENA_PIN, OUTPUT);
+  pinMode(CHARGE_VOLTAGE_PIN, INPUT);
+  for(int i=0;i<6;i++)
+  {
+    pinMode(STAGE_CTRL_PINS[i], OUTPUT); 
+  }
+  pinMode(INIT_PIN, OUTPUT);
+  delay(1000);
+  Serial.println("init...");
+  delay(1000);
+  digitalWrite(INIT_PIN, HIGH);
+  delay(1000);
+  digitalWrite(INIT_PIN, LOW);
 }
 
 void loop()
-{
+{ 
+  
   switch (get_mode())
   {
+
+  case DEBUG_MODE:
+    if(analogRead(CHARGE_VOLTAGE_PIN)<650){
+          digitalWrite(CHARGE_ENA_PIN, HIGH); 
+        }else if (analogRead(CHARGE_VOLTAGE_PIN)>680){  
+          digitalWrite(CHARGE_ENA_PIN, LOW);
+        }
+    Serial.print("charging!");
+    Serial.println(analogRead(CHARGE_VOLTAGE_PIN));
+    delay(200);
+    if(Serial.available()){
+      String command = Serial.readString();
+      if(command.indexOf("fire")!=-1){
+        Serial.println("got:fire!");
+        fire();
+      }
+    }
+  break;
   case IDLE_MODE:
-    if (read_human_sensor())
+    if (true)
     {
       int times_not_found = 0;
       alarm();
       digitalWrite(LASER_PIN, HIGH);
-      // K210.write("start");
-      //  base_servos.set_tilt_angle(10);
-      //  base_servos.set_waist_angle(10);
-      //  base_servos.set_tilt_angle(0);
-      //  base_servos.set_waist_angle(0);
       while (read_human_sensor())
-      {
+      { 
+        /*charge and check*/
+        if(analogRead(CHARGE_VOLTAGE_PIN)<650){
+          digitalWrite(CHARGE_ENA_PIN, HIGH); 
+        }else if (analogRead(CHARGE_VOLTAGE_PIN)>680){  
+          digitalWrite(CHARGE_ENA_PIN, LOW);
+        }
+        Serial.print("charging:");
+        Serial.println(analogRead(CHARGE_VOLTAGE_PIN));
+        if(!with_K210)delay(1000);
+        /*read from K210 and aim.*/
         // K210.write("get");
-        if (K210.available())
+        if (with_K210&&K210.available())
         {
           String text = String(K210.readStringUntil('\n'));
           delay(10);
