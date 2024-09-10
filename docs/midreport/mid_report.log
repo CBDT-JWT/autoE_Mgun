@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.29)  11 AUG 2024 02:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.29)  30 AUG 2024 10:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -854,68 +854,68 @@ Package pdftex.def Info: imgs/systemStructure.png  used on input line 32.
 <imgs/zvscircuit.jpg, id=206, 1622.06pt x 902.37125pt>
 File: imgs/zvscircuit.jpg Graphic file (type jpg)
 <use imgs/zvscircuit.jpg>
-Package pdftex.def Info: imgs/zvscircuit.jpg  used on input line 84.
+Package pdftex.def Info: imgs/zvscircuit.jpg  used on input line 83.
 (pdftex.def)             Requested size: 215.10219pt x 119.65312pt.
 <imgs/zvswave.png, id=207, 860.71562pt x 498.86375pt>
 File: imgs/zvswave.png Graphic file (type png)
 <use imgs/zvswave.png>
-Package pdftex.def Info: imgs/zvswave.png  used on input line 87.
+Package pdftex.def Info: imgs/zvswave.png  used on input line 86.
 (pdftex.def)             Requested size: 215.10219pt x 124.66995pt.
 <imgs/igbtcircuit.jpg, id=208, 1284.8pt x 907.39pt>
 File: imgs/igbtcircuit.jpg Graphic file (type jpg)
 <use imgs/igbtcircuit.jpg>
-Package pdftex.def Info: imgs/igbtcircuit.jpg  used on input line 111.
+Package pdftex.def Info: imgs/igbtcircuit.jpg  used on input line 110.
 (pdftex.def)             Requested size: 172.0824pt x 121.52316pt.
 <imgs/3d.png, id=210, 963.6pt x 505.89pt>
 File: imgs/3d.png Graphic file (type png)
 <use imgs/3d.png>
-Package pdftex.def Info: imgs/3d.png  used on input line 121.
+Package pdftex.def Info: imgs/3d.png  used on input line 120.
 (pdftex.def)             Requested size: 215.10219pt x 112.9249pt.
 <imgs/act.jpg, id=211, 1927.2pt x 1084.05pt>
 File: imgs/act.jpg Graphic file (type jpg)
 <use imgs/act.jpg>
-Package pdftex.def Info: imgs/act.jpg  used on input line 124.
+Package pdftex.def Info: imgs/act.jpg  used on input line 123.
 (pdftex.def)             Requested size: 215.10219pt x 120.9827pt.
 <imgs/soft1.png, id=215, 963.6pt x 542.025pt>
 File: imgs/soft1.png Graphic file (type png)
 <use imgs/soft1.png>
-Package pdftex.def Info: imgs/soft1.png  used on input line 134.
+Package pdftex.def Info: imgs/soft1.png  used on input line 133.
 (pdftex.def)             Requested size: 215.10219pt x 120.99097pt.
 <imgs/soft2.png, id=216, 963.6pt x 542.025pt>
 File: imgs/soft2.png Graphic file (type png)
 <use imgs/soft2.png>
-Package pdftex.def Info: imgs/soft2.png  used on input line 137.
+Package pdftex.def Info: imgs/soft2.png  used on input line 136.
 (pdftex.def)             Requested size: 215.10219pt x 120.99097pt.
 <imgs/soft3.png, id=217, 963.6pt x 542.025pt>
 File: imgs/soft3.png Graphic file (type png)
 <use imgs/soft3.png>
-Package pdftex.def Info: imgs/soft3.png  used on input line 143.
+Package pdftex.def Info: imgs/soft3.png  used on input line 142.
 (pdftex.def)             Requested size: 215.10219pt x 120.99097pt.
 <imgs/soft4.png, id=218, 963.6pt x 542.025pt>
 File: imgs/soft4.png Graphic file (type png)
 <use imgs/soft4.png>
-Package pdftex.def Info: imgs/soft4.png  used on input line 146.
+Package pdftex.def Info: imgs/soft4.png  used on input line 145.
 (pdftex.def)             Requested size: 215.10219pt x 120.99097pt.
  [2{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./imgs/systemStructure.png>] [3 <./imgs/zvscircuit.jpg> <./imgs/zvswave.png> <./imgs/igbtcircuit.jpg>]
 <imgs/demo.png, id=248, 700.362pt x 525.381pt>
 File: imgs/demo.png Graphic file (type png)
 <use imgs/demo.png>
-Package pdftex.def Info: imgs/demo.png  used on input line 157.
+Package pdftex.def Info: imgs/demo.png  used on input line 156.
 (pdftex.def)             Requested size: 406.30981pt x 304.80135pt.
  [4 <./imgs/3d.png> <./imgs/act.jpg> <./imgs/soft1.png> <./imgs/soft2.png> <./imgs/soft3.png> <./imgs/soft4.png>] [5 <./imgs/demo.png>] (./mid_report.aux)
 Package rerunfilecheck Info: File `mid_report.out' has not changed.
 (rerunfilecheck)             Checksum: 3EB957BACA06612B4BFB9FE96A2E7FD2;821.
  ) 
 Here is how much of TeX's memory you used:
- 44307 strings out of 476025
- 1034921 string characters out of 5794015
- 1903382 words of memory out of 5000000
- 63919 multiletter control sequences out of 15000+600000
+ 44279 strings out of 476025
+ 1033942 string characters out of 5794015
+ 1901382 words of memory out of 5000000
+ 63891 multiletter control sequences out of 15000+600000
  564397 words of font info for 223 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,11n,118p,758b,1109s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on mid_report.pdf (5 pages, 14697894 bytes).
+Output written on mid_report.pdf (5 pages, 14697300 bytes).
 PDF statistics:
  609 PDF objects out of 1000 (max. 8388607)
  403 compressed objects within 5 object streams
