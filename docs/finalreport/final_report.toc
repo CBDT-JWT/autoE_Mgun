@@ -1,0 +1,15 @@
+\contentsline {section}{\numberline {1}项目背景}{1}{section.1}%
+\contentsline {section}{\numberline {2}项目简介}{2}{section.2}%
+\contentsline {section}{\numberline {3}子模块设计与实现}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}基于ZVS的升压电路}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}多级线圈驱动电路}{2}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}瞄准系统}{5}{subsection.3.3}%
+\contentsline {section}{\numberline {4}系统全貌}{6}{section.4}%
+\contentsline {section}{\numberline {5}总结与展望}{6}{section.5}%
+\contentsline {section}{\numberline {A}软件源码清单}{6}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}MEGA主控代码}{6}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}K210端代码}{17}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}ESP8266/ESP32端代码}{19}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}python仿真代码}{27}{subsection.A.4}%
+\contentsline {section}{\numberline {B}相关链接}{28}{appendix.B}%
+\contentsline {section}{\numberline {C}参考文献}{28}{appendix.C}%
