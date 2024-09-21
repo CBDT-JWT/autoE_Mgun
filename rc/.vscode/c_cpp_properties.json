@@ -1,0 +1,70 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "D:/projs/autoE_Mgun/rc/include",
+                "D:/projs/autoE_Mgun/rc/src",
+                "D:/projs/autoE_Mgun/rc/.pio/libdeps/nanoatmega328/RF24",
+                "D:/projs/autoE_Mgun/rc/.pio/libdeps/nanoatmega328/RF24/utility",
+                "D:/projs/autoE_Mgun/rc/.pio/libdeps/nanoatmega328/Adafruit MPU6050",
+                "D:/projs/autoE_Mgun/rc/.pio/libdeps/nanoatmega328/Adafruit Unified Sensor",
+                "D:/projs/autoE_Mgun/rc/.pio/libdeps/nanoatmega328/Adafruit SSD1306",
+                "D:/projs/autoE_Mgun/rc/.pio/libdeps/nanoatmega328/Adafruit GFX Library",
+                "D:/projs/autoE_Mgun/rc/.pio/libdeps/nanoatmega328/Adafruit BusIO",
+                "C:/Users/wjian/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "C:/Users/wjian/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                "C:/Users/wjian/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "C:/Users/wjian/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs",
+                "C:/Users/wjian/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "C:/Users/wjian/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "C:/Users/wjian/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "D:/projs/autoE_Mgun/rc/include",
+                    "D:/projs/autoE_Mgun/rc/src",
+                    "D:/projs/autoE_Mgun/rc/.pio/libdeps/nanoatmega328/RF24",
+                    "D:/projs/autoE_Mgun/rc/.pio/libdeps/nanoatmega328/RF24/utility",
+                    "D:/projs/autoE_Mgun/rc/.pio/libdeps/nanoatmega328/Adafruit MPU6050",
+                    "D:/projs/autoE_Mgun/rc/.pio/libdeps/nanoatmega328/Adafruit Unified Sensor",
+                    "D:/projs/autoE_Mgun/rc/.pio/libdeps/nanoatmega328/Adafruit SSD1306",
+                    "D:/projs/autoE_Mgun/rc/.pio/libdeps/nanoatmega328/Adafruit GFX Library",
+                    "D:/projs/autoE_Mgun/rc/.pio/libdeps/nanoatmega328/Adafruit BusIO",
+                    "C:/Users/wjian/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    "C:/Users/wjian/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    "C:/Users/wjian/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "C:/Users/wjian/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs",
+                    "C:/Users/wjian/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "C:/Users/wjian/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "C:/Users/wjian/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60115",
+                "ARDUINO_AVR_NANO",
+                "F_CPU=16000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "__AVR_ATmega328P__",
+                ""
+            ],
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++11",
+            "compilerPath": "C:/Users/wjian/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
+            "compilerArgs": [
+                "-mmcu=atmega328p",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
